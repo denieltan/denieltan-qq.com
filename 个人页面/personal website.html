@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- gallery -->
+<link type="text/css" rel="stylesheet" href="css/cm-overlay.css" />
+<!-- //gallery -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- font -->
+<link href="http://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<!-- //font -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+</head>
+<body>
+	<!-- banner -->
+	<div class="banner">
+		<!-- header -->
+		<div class="header">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+						<div class="w3layouts-logo">
+							<h1><a href="index.html">Personal Website</a></h1>
+						</div>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+						<nav>
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="index.html">Home</a></li>
+								<li><a href="#mail" class="scroll">Mail Me</a></li>
+							</ul>
+						</nav>
+					</div>
+					<!-- /.navbar-collapse -->
+				</nav>
+			</div>
+		</div>
+		<!-- //header -->
+		<div class="banner-top">
+			<div class="container">
+				<div class="slider">
+					<div class="callbacks_container">
+						<ul class="rslides callbacks callbacks1" id="slider4">
+							<li>	
+								<div class="banner_text">
+									<h3>Deniel Tan</h3>
+									<p>有趣的灵魂才能做出好的设计——谭禹辰</p>
+									<div class="w3-button">
+										<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<script src="js/responsiveslides.min.js"></script>
+					<script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider4").responsiveSlides({
+							auto: true,
+							pager:true,
+							nav:true,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+					
+						});
+					 </script>
+					<!--banner Slider starts Here-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+	<!-- modal -->
+	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header"> 
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+						<h4 class="modal-title">More about ME</h4>
+					</div> 
+					<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/m1.jpg" alt="" />
+						<p>现就读于同济大学设计创意学院，喜欢唱、跳、rap。擅长用互联网平台表达不多的生活感情经理。忙于画草图、做模型，沉醉于学习渲染动画。同时也是一个乐评公众号“Melodic Drops乐抛”的创始人、新晋vlog博主、微信深夜哲理讲述者、虚拟乐队创始人。喜欢李诞，也被人说长得像李诞。喜欢的朋友记得一键三连！</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- about -->
+	<div class="about" id="about">
+		<div class="container">
+			<div class="wthree-heading">
+				<h2>About Me</h2>
+				<h4>A</h4>
+			</div>
+			<div class="agileits-about-grids">
+				<div class="col-md-6 agileits-about-grid">
+					<h4>这里是立志做横跨“数理化政史地音体美”的斜杠青年简历 RESUME</h4>
+					<p>曾于Punchline咖啡店负责门店经营管理与顾客服务在咖啡制作的基础上学习更多生豆烘焙、进货运营的知识；更加专业系统地学习咖啡冲煮、萃取与鉴赏。曾于星巴克合生汇臻选咖啡·酒坊负责意式浓缩咖啡制作与咖啡冲煮；学习意式浓缩咖啡基本知识，萃取、充气、融合、拉花各步骤掌握熟练。曾在西瓜短视频博主培养计划学习视频拍摄、剪辑，良好的内容产出表达能力以及自媒体运营管理能力、日常维护与经营。</p>
+					<p>Work at Punchline boutique coffee shop, responsible for store management and customer service；Learn more about roasting, stocking and operation of raw beans on the basis of coffee making；Professional and systematic study of coffee brewing, extraction and appreciation.Worked in Starbucks Reserve Coffee & Bar Mixató, responsible for espresso making and coffee brewing; Learn the basic knowledge of espresso, master the steps of extraction, aeration, fusion and latte.We media operation and content output; Acknowledge video shooting, editing, good content production and expression skills.
+						
+						
+						</p>
+				</div>
+				<div class="col-md-6 agileits-about-grid">
+					<h4>这里是闲暇之余做点设计的按头报告 RESUME</h4>
+					<p>参加大学生创新创业比赛校级项目“从衣到无穷大：探索旧衣回收的无限可能”；余德耀美术馆数字艺术节Hyundai Art Tech项目《Paker云观展系统》；第二届“卿云杯”全国通识课程论文大赛《企业形象演变的研究》。
+						</p>
+					<p>College Students' innovation and Entrepreneurship Competition: "From Clothes to Infinity: Exploring the Infinite Possibilities of Old Clothes Recycling";Hyundai Art Tech project: Paker Cloud Viewing System, Yuz Museum Digital Art Festival ;The second "Qingyun Cup" National Elective course Paper Competition.
+						</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //about -->
+	<!-- gallery -->
+	<div class="gallery" id="gallery">
+		<div class="container">
+			<div class="wthree-heading">
+				<h3>My Gallery</h3>
+				<h4>G</h4>
+			</div>
+			<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+					<ul id="myTab" class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">All</a></li>
+						<li role="presentation"><a href="#learning" role="tab" id="learning-tab" data-toggle="tab" aria-controls="learning">Portfolio</a></li>
+						<li role="presentation"><a href="#playing" role="tab" id="playing-tab" data-toggle="tab" aria-controls="playing">Photography</a></li>
+						<li role="presentation"><a href="#painting" role="tab" id="painting-tab" data-toggle="tab" aria-controls="painting">Hobbies</a></li>
+						<li role="presentation"><a href="#school" role="tab" id="school-tab" data-toggle="tab" aria-controls="school">Profile</a></li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
+							<div class="w3_tab_img">
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/2.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="images/2.jpg" alt=" " class="img-responsive" />
+										  </figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/3.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="images/3.jpg" alt=" " class="img-responsive" />
+										  </figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/12.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="images/12.jpg" alt=" " class="img-responsive" />
+										  </figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/4.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="images/4.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/5.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="images/5.jpg" alt=" " class="img-responsive" />
+										</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/6.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/6.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/7.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/7.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/13.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/13.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/14.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/14.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div><div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/15.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/15.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div><div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/16.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/16.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div><div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/17.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/17.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div><div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/18.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/18.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div><div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/19.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/19.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div></div><div class="col-md-3 w3_tab_img_left">
+										<div class="demo">
+											<a class="cm-overlay" href="images/20.jpg">
+												<figure class="imghvr-shutter-in-out-diag-2"><img src="images/20.jpg" alt=" " class="img-responsive" />
+												</figure>
+											</a>
+										</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/9.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/9.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/21.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/21.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/22.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/22.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="learning" aria-labelledby="learning-tab">
+							<div class="w3_tab_img">
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/2.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/2.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/3.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/3.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/12.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="images/12.jpg" alt=" " class="img-responsive" />
+										  </figure>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="playing" aria-labelledby="playing-tab">
+							<div class="w3_tab_img">
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/4.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/4.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/5.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/5.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/6.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/6.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/7.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/7.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/13.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/13.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/14.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/14.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/15.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/15.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/16.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/16.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/17.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/17.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/18.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/18.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/19.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/19.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/20.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/20.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="painting" aria-labelledby="painting-tab">
+							<div class="w3_tab_img">
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/8.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/8.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/9.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/9.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/21.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/21.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/22.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/22.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="school" aria-labelledby="school-tab">
+							<div class="w3_tab_img">
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/23.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/23.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="images/24.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/24.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<script src="js/jquery.tools.min.js"></script>
+			<script src="js/jquery.mobile.custom.min.js"></script>
+			<script src="js/jquery.cm-overlay.js"></script>
+			<script>
+				$(document).ready(function(){
+					$('.cm-overlay').cmOverlay();
+				});
+			</script>
+		</div>
+	</div>
+	<!-- //gallery -->
+	<!-- //contact -->
+	<!-- map -->
+	<div class="map-grid">
+		<iframe src="" class="map" style="border:0" allowfullscreen=""></iframe>
+	</div>
+	<!-- //map -->
